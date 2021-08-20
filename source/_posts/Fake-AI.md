@@ -28,9 +28,11 @@ Obviously the idea was a failure because the bot is stupid (it does not distingu
 
 After years I have found again the whole source code on an old USB and, despite the uselessness of the project, some parts of it could be good. So I posted it on Github.
 
+## Links
+
 <table>
 <tr>
-    <td>Link</td>
+    <td>Source Code</td>
     <td><a href="https://github.com/derogab/fake-ai" target="_new">https://github.com/derogab/fake-ai</a></td>
 </tr>
 </table>
