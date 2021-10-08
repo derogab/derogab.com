@@ -35,11 +35,11 @@ To analyze this fact I did a _sniffing_ with [Wireshark](https://www.wireshark.o
 see [Wikipedia](https://en.wikipedia.org/wiki/Packet_analyzer)
 > A packet analyzer (also known as a network analyzer, protocol analyzer or packet sniffer—or, for particular types of networks, an Ethernet sniffer or wireless sniffer) is a computer program or piece of computer hardware that can intercept and log traffic that passes over a digital network or part of a network.
 
-To intercept my friends' stories I connected the computer and the smartphone to the same wifi network. Then I opened Wireshark.
+To intercept my friends\' stories I connected the computer and the smartphone to the same wifi network. Then I opened Wireshark.
 
 _I saw all my network data that was not encrypted._
 
-At this time I opened Instagram and clicked on my friend's story.
+At this time I opened Instagram and clicked on my friend\'s story.
 
 ![alt text][story_img]
 
@@ -60,7 +60,7 @@ So I could find the _full request URI_ containing the direct link to the content
 ## Self-destruction
 In the following days I kept the contents under control and I could verify that the images and videos were deleted only after 3 days.
 
-## Alternative Stories' Apps
+## Alternative Stories\' Apps
 The procedure is not applicable with Snapchat, Facebook and Whatsapp because they use an encrypted protocol: [TLS](https://en.wikipedia.org/wiki/Transport_Layer_Security).
 
 ## Video demo
