@@ -4,10 +4,11 @@ navname:
 # navigatior items
 nav:
   Home: /
+  #About: /about
+  Projects: /projects
   Blog: /archives
   # Categories: /category
   # Tags: /tag
-  # About: /about
 
 # favicon
 favicon: /favicon.ico
