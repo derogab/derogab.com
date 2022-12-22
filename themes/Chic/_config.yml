@@ -35,6 +35,7 @@ links:
   # Gallery:
   # RSS:
   Twitter: https://twitter.com/derogab
+  Mastodon: https://mstdn.io/@derogab
   Instagram: https://instagram.com/derogab
   WaveFul: https://waveful.app/accounts/derogab
   # AliPay:
@@ -97,6 +98,7 @@ scripts:
   - /js/tocbot.min.js
     # tscanlin/tocbot: Build a table of contents from headings in an HTML document.
     # https://github.com/tscanlin/tocbot
+  - /fonts/fontawesome/js/all.min.js
 
 
 # plugin functions
