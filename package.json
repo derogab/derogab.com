@@ -5,6 +5,11 @@
   "hexo": {
     "version": "6.3.0"
   },
+  "scripts": {
+    "clean": "hexo clean",
+    "server": "hexo server",
+    "deploy": "hexo deploy"
+  },
   "dependencies": {
     "hexo": "^6.3.0",
     "hexo-deployer-ftpsync": "^0.1.1",
