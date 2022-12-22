@@ -11,7 +11,7 @@ updates:
     directory: '/'
     target-branch: 'master'
     schedule:
-      interval: 'weekly'
+      interval: 'monthly'
     assignees:
       - 'derogab'
     labels:
