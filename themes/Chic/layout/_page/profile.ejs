@@ -15,8 +15,10 @@
                         <%if(theme.links_icon_enable){ %>
                             <% if (key.toLowerCase() == 'waveful'){ %>
                                 <i class="icomoon custom-icon-<%- key.toLowerCase() %>"></i>
+                            <% } else if (key.toLowerCase() == 'blog'){ %>
+                                <i class="fas fa-book-open"></i>
                             <% } else { %>
-                                <i class="iconfont icon-<%- key.toLowerCase() %>"></i>
+                                <i class="fab fa-<%- key.toLowerCase() %>"></i>
                             <% } %>
                         <%}%>
                     </a>
