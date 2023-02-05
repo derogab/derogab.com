@@ -24,7 +24,11 @@ The excessive amount of Shorts videos, who often prioritize clicks over substanc
 
 ## The solution
 
-There is a very simple trick to go back to the \'Old YouTube\' without Shorts, at least on the web version. Here a quick tutorial:
+There is a very simple trick to go back to the \'Old YouTube\' without Shorts, at least on the web version. 
+
+![alt text][no_shorts_img]
+
+Here a quick tutorial:
 
 1. Install [uBlock Origin](https://github.com/gorhill/uBlock) in your browser.
 
@@ -76,3 +80,7 @@ Note that these filters have been copied from [this source](https://letsblock.it
     <td><a href="https://letsblock.it/filters/youtube-shorts" target="_new">Hide Youtube #Shorts</a></td>
 </tr>
 </table>
+
+
+
+[no_shorts_img]: /image/linked-to/Hide-YouTube-Shorts/header.png "No more YouTube Shorts header image"
