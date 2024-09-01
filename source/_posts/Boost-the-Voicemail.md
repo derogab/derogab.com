@@ -9,7 +9,7 @@ tags:
 ---
 
 ## Introduction
-A little article to introduce **Voicemail**, a tool that exploits the [ability of Cloudflare Workers to receive email](https://developers.cloudflare.com/email-routing/email-workers/) combined with AI to manage voicemail messages.
+A short article to introduce **Voicemail**, a tool that exploits the [ability of Cloudflare Workers to receive email](https://developers.cloudflare.com/email-routing/email-workers/) combined with AI to manage voicemail messages.
 
 ## Important note
 In order for the system to work correctly, the telephone operator must provide the possibility to forward voicemail audio messages via email as an attachment.
