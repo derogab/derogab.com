@@ -9,7 +9,7 @@ nav:
   Blog: /archives
   # Categories: /category
   # Tags: /tag
-  Donate: donate
+  Donate: /donate
 
 # favicon
 favicon: /favicon.ico
