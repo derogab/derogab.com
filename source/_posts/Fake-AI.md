@@ -39,4 +39,4 @@ After years I have found again the whole source code on an old USB and, despite 
 
 
 
-[fake_ai_img]: /image/linked-to/Fake-AI/screenshot.png "Screenshot of Fake AI"
+[fake_ai_img]: /assets/images/linked-to-posts/Fake-AI/screenshot.png "Screenshot of Fake AI"

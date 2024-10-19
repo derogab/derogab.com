@@ -58,4 +58,4 @@ At the end, all retrieved information will be sent to a specific chat through th
 </table>
 
 
-[example_screenshot_img]: /image/linked-to/Boost-the-Voicemail/screenshot.png "Example of voicemail message on Telegram"
+[example_screenshot_img]: /assets/images/linked-to-posts/Boost-the-Voicemail/screenshot.png "Example of voicemail message on Telegram"

@@ -47,4 +47,4 @@ More experienced developers can add in `extra.js` more powerful features to use 
 </table>
 
 
-[animation]: /image/linked-to/ClownBot/animation.gif "GIF of ClownBot"
+[animation]: /assets/images/linked-to-posts/ClownBot/animation.gif "GIF of ClownBot"

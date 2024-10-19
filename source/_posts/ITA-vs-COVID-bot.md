@@ -51,5 +51,5 @@ In the second version this differentiation has been added and all calculations a
 
 
 
-[screenshot_v1]: /image/linked-to/ITA-vs-COVID-bot/screenshot1.png "Screenshot of ITAvsCOVIDbot first version"
-[screenshot_v2]: /image/linked-to/ITA-vs-COVID-bot/screenshot2.png "Screenshot of ITAvsCOVIDbot second version"
+[screenshot_v1]: /assets/images/linked-to-posts/ITA-vs-COVID-bot/screenshot1.png "Screenshot of ITAvsCOVIDbot first version"
+[screenshot_v2]: /assets/images/linked-to-posts/ITA-vs-COVID-bot/screenshot2.png "Screenshot of ITAvsCOVIDbot second version"

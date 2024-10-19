@@ -83,4 +83,4 @@ Note that these filters have been copied from [this source](https://letsblock.it
 
 
 
-[no_shorts_img]: /image/linked-to/Hide-YouTube-Shorts/header.png "No more YouTube Shorts header image"
+[no_shorts_img]: /assets/images/linked-to-posts/Hide-YouTube-Shorts/header.png "No more YouTube Shorts header image"

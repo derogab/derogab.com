@@ -74,7 +74,7 @@ After some updates of the app it seems that **this bug has been fixed**.
 
 
 
-[story_img]: /image/linked-to/Instagram-doesn-t-encrypt-stories/img00_ok.jpg "Image in the stories"
-[sniffing]: /image/linked-to/Instagram-doesn-t-encrypt-stories/img01_ok.png "Sniffing"
-[img_analysis]: /image/linked-to/Instagram-doesn-t-encrypt-stories/img02_ok.png "Content Analysis"
-[img_content]: /image/linked-to/Instagram-doesn-t-encrypt-stories/img03_ok.png "Content Image"
+[story_img]: /assets/images/linked-to-posts/Instagram-doesn-t-encrypt-stories/img00_ok.jpg "Image in the stories"
+[sniffing]: /assets/images/linked-to-posts/Instagram-doesn-t-encrypt-stories/img01_ok.png "Sniffing"
+[img_analysis]: /assets/images/linked-to-posts/Instagram-doesn-t-encrypt-stories/img02_ok.png "Content Analysis"
+[img_content]: /assets/images/linked-to-posts/Instagram-doesn-t-encrypt-stories/img03_ok.png "Content Image"
