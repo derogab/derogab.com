@@ -91,3 +91,8 @@ deploy:
   repo: https://github.com/derogab/derogab.com
   branch: gh-pages
   ignore_hidden: false
+
+# Include
+# Extra includes
+include:
+  - .well-known/*
