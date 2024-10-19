@@ -95,4 +95,5 @@ deploy:
 # Include
 # Extra includes
 include:
+  - .nojekyll
   - .well-known/*
