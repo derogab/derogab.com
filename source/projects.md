@@ -3,8 +3,8 @@ title: Projects
 
 ---
 
-##### Startup
-🌊 [Waveful](https://waveful.app): a sharing platform for creators.
+##### Tech Companies
+🌊 [Waveful](https://waveful.com): a community platform to earn from your passions and make new friends.
 
 ##### Open Source
 📊 [Coingraph](https://github.com/derogab/coingraph): a real-time graph for cryptocurrencies.
