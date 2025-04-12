@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="derogab">
+
+
+    <meta name="subtitle" content="Gabriele De Rosa.">
+
+
+    <meta name="description" content="My name is Gabriele De Rosa. Discover more about me here.">
+
+
+
+<title>Bypass ChatGPT block | I&#39;m Gabriele!</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+    <script src="/fonts/fontawesome/js/all.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="I'm Gabriele!" type="application/atom+xml">
+</head>
+
+<body>
+    <script>
+        // this function is used to check current theme before page loaded.
+        (() => {
+            const currentTheme = window.localStorage && window.localStorage.getItem('theme') || '';
+            const isDark = currentTheme === 'dark';
+            const pagebody = document.getElementsByTagName('body')[0]
+            if (isDark) {
+                pagebody.classList.add('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Dark"
+            } else {
+                pagebody.classList.remove('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Light"
+            }
+        })();
+    </script>
+
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/"></a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/">Home</a>
+                
+                    <a class="menu-item" href="/projects">Projects</a>
+                
+                    <a class="menu-item" href="/archives">Blog</a>
+                
+                    <a class="menu-item" href="/donate">Donate</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/"></a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/">Home</a>
+                
+                    <a class="menu-item" href="/projects">Projects</a>
+                
+                    <a class="menu-item" href="/archives">Blog</a>
+                
+                    <a class="menu-item" href="/donate">Donate</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+            <div class="main">
+                <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    var tocbot_timer;
+    var DEPTH_MAX = 6; // 为 6 时展开所有
+    var tocbot_default_config = {
+        tocSelector: '.tocbot-list',
+        contentSelector: '.post-content',
+        headingSelector: 'h1, h2, h3, h4, h5',
+        orderedList: false,
+        scrollSmooth: true,
+        onClick: extend_click,
+    };
+
+    function extend_click() {
+        clearTimeout(tocbot_timer);
+        tocbot_timer = setTimeout(function() {
+            tocbot.refresh(obj_merge(tocbot_default_config, {
+                hasInnerContainers: true
+            }));
+        }, 420); // 这个值是由 tocbot 源码里定义的 scrollSmoothDuration 得来的
+    }
+
+    document.ready(function() {
+        tocbot.init(obj_merge(tocbot_default_config, {
+            collapseDepth: 1
+        }));
+    });
+
+    function expand_toc() {
+        var b = document.querySelector('.tocbot-toc-expand');
+        var expanded = b.getAttribute('data-expanded');
+        expanded ? b.removeAttribute('data-expanded') : b.setAttribute('data-expanded', true);
+        tocbot.refresh(obj_merge(tocbot_default_config, {
+            collapseDepth: expanded ? 1 : DEPTH_MAX
+        }));
+        b.innerText = expanded ? 'Expand all' : 'Collapse all';
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+    function obj_merge(target, source) {
+        for (var item in source) {
+            if (source.hasOwnProperty(item)) {
+                target[item] = source[item];
+            }
+        }
+        return target;
+    }
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">Bypass ChatGPT block</h1>
+            
+                <div class="post-meta">
+                    
+                        Author: <a itemprop="author" rel="author" href="/">derogab</a>
+                    
+
+                    
+                        <span class="post-time">
+                        Date: <a href="#">April 3, 2023&nbsp;&nbsp;11:30:00</a>
+                        </span>
+                    
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <h2 id="Preamble"><a href="#Preamble" class="headerlink" title="Preamble"></a>Preamble</h2><p>On March 31, 2023, the Italian privacy authority (&quot;Garante della Privacy&quot;) initiated an inquiry against OpenAI regarding the ChatGPT data. Consequently, OpenAI blocked access to ChatGPT in Italy. However, there is a simple way to bypass this block using Brave Browser and its Tor private connection feature.</p>
+<blockquote>
+<p>UPDATE: As of April 30, 2023 ChatGPT is again publicly accessible from Italy.</p>
+</blockquote>
+<h2 id="Is-it-possible-to-access-ChatGPT-despite-the-block-Spoiler-Yes"><a href="#Is-it-possible-to-access-ChatGPT-despite-the-block-Spoiler-Yes" class="headerlink" title="Is it possible to access ChatGPT despite the block? Spoiler: Yes!"></a>Is it possible to access ChatGPT despite the block? Spoiler: Yes!</h2><p>Even though OpenAI has blocked access to ChatGPT in Italy, there is still a way to access it using Brave Browser with Tor private connection.</p>
+<h2 id="What-is-Brave-Browser"><a href="#What-is-Brave-Browser" class="headerlink" title="What is Brave Browser?"></a>What is Brave Browser?</h2><p>Brave Browser is a free and open-source web browser developed by Brave Software Inc. It is designed to provide a more private, secure, and faster browsing experience. One of its main features is the ability to use Tor private connection, which can help users to bypass restrictions and access blocked content.</p>
+<h2 id="What-is-Tor-network"><a href="#What-is-Tor-network" class="headerlink" title="What is Tor network?"></a>What is Tor network?</h2><p>Tor is a free and open-source software that enables anonymous communication. It is designed to protect users&#39; privacy and security by encrypting their internet traffic and routing it through a network of volunteer-operated servers around the world.</p>
+<h2 id="How-to-use-Brave-Tor-to-access-ChatGPT"><a href="#How-to-use-Brave-Tor-to-access-ChatGPT" class="headerlink" title="How to use Brave + Tor to access ChatGPT"></a>How to use Brave + Tor to access ChatGPT</h2><ol>
+<li>Download and install Brave Browser from the official website.</li>
+<li>Launch Brave Browser and click on the hamburger menu (three horizontal lines) on the top right corner of the screen.</li>
+<li>Click on &quot;New Private Window with Tor&quot; from the drop-down menu. This will open a new window with Tor private connection enabled.</li>
+<li>In the Tor private window, type &quot;chatgpt.openai.com&quot; in the address bar and press Enter.</li>
+<li>You should now be able to access ChatGPT without any issues.</li>
+</ol>
+<h2 id="Warning-VPN-with-affiliate-code"><a href="#Warning-VPN-with-affiliate-code" class="headerlink" title="Warning: VPN with affiliate code"></a>Warning: VPN with affiliate code</h2><p>Beware of those who claim that you can only access ChatGPT in Italy using a VPN and ask you to purchase a VPN subscription with its affiliate code.</p>
+<p>Certainly, it&#39;s legitimate, but ensure that they approach it transparently by presenting you with alternative solutions that are free (such as this one).</p>
+<h2 id="Extra-written-with-ChatGPT"><a href="#Extra-written-with-ChatGPT" class="headerlink" title="Extra: written with ChatGPT"></a>Extra: written with ChatGPT</h2><p>This article was written with ChatGPT. Cool, huh?</p>
+
+        </div>
+
+        
+            <section class="post-copyright">
+                
+                    <p class="copyright-item">
+                        <span>Author:</span>
+                        <span>derogab</span>
+                    </p>
+                
+                
+                    <p class="copyright-item">
+                        <span>Permalink:</span>
+                        <span><a href="https://derogab.com/2023/04/03/Bypass-ChatGPT-block/">https://derogab.com/2023/04/03/Bypass-ChatGPT-block/</a></span>
+                    </p>
+                
+                
+                    <p class="copyright-item">
+                        <span>License:</span>
+                        <span>© derogab.com</span>
+                    </p>
+                
+                
+
+            </section>
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                    
+                        <a href="/tags/ChatGPT/"># ChatGPT</a>
+                    
+                        <a href="/tags/Italy/"># Italy</a>
+                    
+                        <a href="/tags/Brave/"># Brave</a>
+                    
+                        <a href="/tags/Tor/"># Tor</a>
+                    
+                        
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">back</a>
+                <span>· </span>
+                <a href="/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+                <a class="prev" rel="prev" href="/2024/03/16/Exploring-Nostr/">Exploring Nostr</a>
+            
+            
+            <a class="next" rel="next" href="/2023/02/05/Hide-YouTube-Shorts/">Hide YouTube Shorts</a>
+            
+        </section>
+
+
+    </article>
+</div>
+
+            </div>
+            <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© 2025 • Made with ❤️ by <b>derogab</b> </span>
+    </div>
+</footer>
+
+    </div>
+</body>
+
+</html>
