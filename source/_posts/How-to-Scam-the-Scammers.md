@@ -7,6 +7,8 @@ tags:
   - scammers
 ---
 
+![alt-text][header]
+
 ## The Scammer Epidemic 🎭
 
 We\'ve all been there. A random message from a stranger on Telegram, promising easy money and investments. Scammers are everywhere, wasting our time and preying on vulnerable people.
@@ -84,6 +86,7 @@ Is it petty? Maybe. Is it satisfying? Absolutely.
 
 Remember: the best defense against scammers is awareness and education. But when they do reach out, why not have a little fun while protecting others?
 
+[header]: /assets/images/linked-to-posts/How-to-Scam-the-Scammers/header.png "How to Scam the Scammer"
 [chat-example-1]: /assets/images/linked-to-posts/How-to-Scam-the-Scammers/chat-example-1.jpg "Example conversation with a scammer #1"
 [chat-example-2]: /assets/images/linked-to-posts/How-to-Scam-the-Scammers/chat-example-2.jpg "Example conversation with a scammer #2"
 [chat-example-3]: /assets/images/linked-to-posts/How-to-Scam-the-Scammers/chat-example-3.jpg "Example conversation with a scammer #3"
