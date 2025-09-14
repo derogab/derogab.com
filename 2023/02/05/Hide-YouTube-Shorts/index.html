@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="derogab">
+
+
+    <meta name="subtitle" content="Gabriele De Rosa.">
+
+
+    <meta name="description" content="My name is Gabriele De Rosa. Discover more about me here.">
+
+
+
+<title>Hide YouTube Shorts | I&#39;m Gabriele!</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+    <script src="/fonts/fontawesome/js/all.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="I'm Gabriele!" type="application/atom+xml">
+</head>
+
+<body>
+    <script>
+        // this function is used to check current theme before page loaded.
+        (() => {
+            const currentTheme = window.localStorage && window.localStorage.getItem('theme') || '';
+            const isDark = currentTheme === 'dark';
+            const pagebody = document.getElementsByTagName('body')[0]
+            if (isDark) {
+                pagebody.classList.add('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Dark"
+            } else {
+                pagebody.classList.remove('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Light"
+            }
+        })();
+    </script>
+
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/"></a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/">Home</a>
+                
+                    <a class="menu-item" href="/projects">Projects</a>
+                
+                    <a class="menu-item" href="/archives">Blog</a>
+                
+                    <a class="menu-item" href="/donate">Donate</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/"></a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/">Home</a>
+                
+                    <a class="menu-item" href="/projects">Projects</a>
+                
+                    <a class="menu-item" href="/archives">Blog</a>
+                
+                    <a class="menu-item" href="/donate">Donate</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+            <div class="main">
+                <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    var tocbot_timer;
+    var DEPTH_MAX = 6; // 为 6 时展开所有
+    var tocbot_default_config = {
+        tocSelector: '.tocbot-list',
+        contentSelector: '.post-content',
+        headingSelector: 'h1, h2, h3, h4, h5',
+        orderedList: false,
+        scrollSmooth: true,
+        onClick: extend_click,
+    };
+
+    function extend_click() {
+        clearTimeout(tocbot_timer);
+        tocbot_timer = setTimeout(function() {
+            tocbot.refresh(obj_merge(tocbot_default_config, {
+                hasInnerContainers: true
+            }));
+        }, 420); // 这个值是由 tocbot 源码里定义的 scrollSmoothDuration 得来的
+    }
+
+    document.ready(function() {
+        tocbot.init(obj_merge(tocbot_default_config, {
+            collapseDepth: 1
+        }));
+    });
+
+    function expand_toc() {
+        var b = document.querySelector('.tocbot-toc-expand');
+        var expanded = b.getAttribute('data-expanded');
+        expanded ? b.removeAttribute('data-expanded') : b.setAttribute('data-expanded', true);
+        tocbot.refresh(obj_merge(tocbot_default_config, {
+            collapseDepth: expanded ? 1 : DEPTH_MAX
+        }));
+        b.innerText = expanded ? 'Expand all' : 'Collapse all';
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+    function obj_merge(target, source) {
+        for (var item in source) {
+            if (source.hasOwnProperty(item)) {
+                target[item] = source[item];
+            }
+        }
+        return target;
+    }
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">Hide YouTube Shorts</h1>
+            
+                <div class="post-meta">
+                    
+                        Author: <a itemprop="author" rel="author" href="/">derogab</a>
+                    
+
+                    
+                        <span class="post-time">
+                        Date: <a href="#">February 5, 2023&nbsp;&nbsp;19:20:00</a>
+                        </span>
+                    
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p>YouTube is a popular online video-sharing platform where users can upload, share, and view videos. To get the most out of YouTube, it&#39;s important to know how to find and watch videos, subscribe to channels, and interact with the community.</p>
+<p>YouTube Shorts is a new feature on YouTube that allows users to create short videos using multi-segment camera footage and creative tools. </p>
+<h2 id="The-problem"><a href="#The-problem" class="headerlink" title="The problem"></a>The problem</h2><p>The Shorts have distorted the original version of YouTube bringing it towards a type of content that nobody wants to see on YouTube. </p>
+<p>It could certainly be interesting and entertaining to view also this type of content, but on different platforms, for example <a target="_blank" rel="noopener" href="https://invites.waveful.app/EKYC">Waveful</a>. Not on YouTube.</p>
+<p>The excessive amount of Shorts videos, who often prioritize clicks over substance, has also cluttered the following-channels page and made it hard to reach real videos with actual content.</p>
+<h2 id="The-solution"><a href="#The-solution" class="headerlink" title="The solution"></a>The solution</h2><p>There is a very simple trick to go back to the &#39;Old YouTube&#39; without Shorts, at least on the web version. </p>
+<p><img src="/assets/images/linked-to-posts/Hide-YouTube-Shorts/header.png" alt="alt text" title="No more YouTube Shorts header image"></p>
+<p>Here a quick tutorial:</p>
+<ol>
+<li><p>Install <a target="_blank" rel="noopener" href="https://github.com/gorhill/uBlock">uBlock Origin</a> in your browser.</p>
+</li>
+<li><p>In uBlock Origin Settings, add these filters:</p>
+</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">www.youtube.com##ytd-guide-renderer a.yt-simple-endpoint path[d^=&quot;M10 14.65v-5.3L15 12l-5 2.65zm7.77-4.33c-.77-.32-1.2-.5-1.2-.5L18&quot;]:upward(ytd-guide-entry-renderer)</span><br><span class="line">www.youtube.com##ytd-mini-guide-renderer a.yt-simple-endpoint path[d^=&quot;M10 14.65v-5.3L15 12l-5 2.65zm7.77-4.33c-.77-.32-1.2-.5-1.2-.5L18&quot;]:upward(ytd-mini-guide-entry-renderer)</span><br><span class="line">www.youtube.com##ytd-browse #dismissible ytd-rich-grid-slim-media[is-short]:upward(ytd-rich-section-renderer)</span><br><span class="line">www.youtube.com##ytd-browse[page-subtype=&quot;home&quot;] .ytd-thumbnail[href^=&quot;/shorts/&quot;]:upward(ytd-rich-item-renderer)</span><br><span class="line">www.youtube.com##ytd-browse[page-subtype=&quot;subscriptions&quot;] .ytd-thumbnail[href^=&quot;/shorts/&quot;]:upward(ytd-grid-video-renderer)</span><br><span class="line">www.youtube.com##ytd-search .ytd-thumbnail[href^=&quot;/shorts/&quot;]:upward(ytd-video-renderer)</span><br><span class="line">www.youtube.com##ytd-watch-next-secondary-results-renderer .ytd-thumbnail[href^=&quot;/shorts/&quot;]:upward(ytd-compact-video-renderer,ytd-shelf-renderer)</span><br><span class="line">www.youtube.com##ytd-browse[page-subtype=&quot;subscriptions&quot;] ytd-video-renderer .ytd-thumbnail[href^=&quot;/shorts/&quot;]:upward(ytd-item-section-renderer)</span><br><span class="line">www.youtube.com##ytd-browse[page-subtype=&quot;channels&quot;] #contents.ytd-reel-shelf-renderer:upward(ytd-item-section-renderer)</span><br><span class="line">www.youtube.com##ytd-search #contents ytd-reel-shelf-renderer</span><br><span class="line">m.youtube.com##ytm-reel-shelf-renderer</span><br><span class="line">m.youtube.com##ytm-pivot-bar-renderer div.pivot-shorts:upward(ytm-pivot-bar-item-renderer)</span><br><span class="line">m.youtube.com##ytm-browse ytm-item-section-renderer ytm-thumbnail-overlay-time-status-renderer[data-style=&quot;SHORTS&quot;]:upward(ytm-video-with-context-renderer)</span><br><span class="line">m.youtube.com##ytm-browse ytm-item-section-renderer ytm-thumbnail-overlay-time-status-renderer[data-style=&quot;SHORTS&quot;]:upward(ytm-compact-video-renderer)</span><br><span class="line">m.youtube.com##ytm-search ytm-thumbnail-overlay-time-status-renderer[data-style=&quot;SHORTS&quot;]:upward(ytm-compact-video-renderer)</span><br><span class="line">m.youtube.com##ytm-single-column-watch-next-results-renderer ytm-thumbnail-overlay-time-status-renderer span:has-text(/^(0:\d\d|1:0\d)$/):upward(ytm-video-with-context-renderer)</span><br></pre></td></tr></table></figure>
+
+<p>Note that these filters have been copied from <a target="_blank" rel="noopener" href="https://letsblock.it/filters/youtube-shorts">this source</a>. One day, with YouTube updates, it may need to be changed and updated accordingly. But let&#39;s enjoy it as long as it works!</p>
+<h2 id="Links"><a href="#Links" class="headerlink" title="Links"></a>Links</h2><table>
+<tr>
+    <td>Reddit Thread</td>
+    <td><a href="https://www.reddit.com/r/uBlockOrigin/comments/m9znll/hide_youtube_shorts_from_video_lists/" target="_new">Hide youtube shorts from video lists</a></td>
+</tr>
+<tr>
+    <td>uBlock Origin - Source Code</td>
+    <td><a href="https://github.com/gorhill/uBlock" target="_new">GitHub Repository</a></td>
+</tr>
+<tr>
+    <td>uBlock Origin - Browser Extension</td>
+    <td>
+        <a href="https://addons.mozilla.org/addon/ublock-origin/" target="_new">Firefox</a> -
+        <a href="https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm" target="_new">Chrome</a> -
+        <a href="https://microsoftedge.microsoft.com/addons/detail/ublock-origin/odfafepnkmbhccpbejgmiehpchacaeak" target="_new">Microsoft</a> -
+        <a href="https://addons.opera.com/extensions/details/ublock/" target="_new">Opera</a>
+    </td>
+</tr>
+<tr>
+    <td>Source of Filters</td>
+    <td><a href="https://letsblock.it/filters/youtube-shorts" target="_new">Hide Youtube #Shorts</a></td>
+</tr>
+</table>
+
+
+
+
+        </div>
+
+        
+            <section class="post-copyright">
+                
+                    <p class="copyright-item">
+                        <span>Author:</span>
+                        <span>derogab</span>
+                    </p>
+                
+                
+                    <p class="copyright-item">
+                        <span>Permalink:</span>
+                        <span><a href="https://derogab.com/2023/02/05/Hide-YouTube-Shorts/">https://derogab.com/2023/02/05/Hide-YouTube-Shorts/</a></span>
+                    </p>
+                
+                
+                    <p class="copyright-item">
+                        <span>License:</span>
+                        <span>© derogab.com</span>
+                    </p>
+                
+                
+
+            </section>
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                    
+                        <a href="/tags/youtube/"># youtube</a>
+                    
+                        <a href="/tags/shorts/"># shorts</a>
+                    
+                        <a href="/tags/ublock/"># ublock</a>
+                    
+                        
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">back</a>
+                <span>· </span>
+                <a href="/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+                <a class="prev" rel="prev" href="/2023/04/03/Bypass-ChatGPT-block/">Bypass ChatGPT block</a>
+            
+            
+            <a class="next" rel="next" href="/2021/01/10/ITA-vs-COVID-bot/">ITA vs COVID bot</a>
+            
+        </section>
+
+
+    </article>
+</div>
+
+            </div>
+            <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© 2025 • Made with ❤️ by <b>derogab</b> </span>
+    </div>
+</footer>
+
+    </div>
+</body>
+
+</html>

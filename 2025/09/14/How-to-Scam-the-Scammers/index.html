@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="derogab">
+
+
+    <meta name="subtitle" content="Gabriele De Rosa.">
+
+
+    <meta name="description" content="My name is Gabriele De Rosa. Discover more about me here.">
+
+
+
+<title>How to Scam the Scammers | I&#39;m Gabriele!</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+    <script src="/fonts/fontawesome/js/all.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="I'm Gabriele!" type="application/atom+xml">
+</head>
+
+<body>
+    <script>
+        // this function is used to check current theme before page loaded.
+        (() => {
+            const currentTheme = window.localStorage && window.localStorage.getItem('theme') || '';
+            const isDark = currentTheme === 'dark';
+            const pagebody = document.getElementsByTagName('body')[0]
+            if (isDark) {
+                pagebody.classList.add('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Dark"
+            } else {
+                pagebody.classList.remove('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Light"
+            }
+        })();
+    </script>
+
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/"></a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/">Home</a>
+                
+                    <a class="menu-item" href="/projects">Projects</a>
+                
+                    <a class="menu-item" href="/archives">Blog</a>
+                
+                    <a class="menu-item" href="/donate">Donate</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/"></a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/">Home</a>
+                
+                    <a class="menu-item" href="/projects">Projects</a>
+                
+                    <a class="menu-item" href="/archives">Blog</a>
+                
+                    <a class="menu-item" href="/donate">Donate</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+            <div class="main">
+                <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    var tocbot_timer;
+    var DEPTH_MAX = 6; // 为 6 时展开所有
+    var tocbot_default_config = {
+        tocSelector: '.tocbot-list',
+        contentSelector: '.post-content',
+        headingSelector: 'h1, h2, h3, h4, h5',
+        orderedList: false,
+        scrollSmooth: true,
+        onClick: extend_click,
+    };
+
+    function extend_click() {
+        clearTimeout(tocbot_timer);
+        tocbot_timer = setTimeout(function() {
+            tocbot.refresh(obj_merge(tocbot_default_config, {
+                hasInnerContainers: true
+            }));
+        }, 420); // 这个值是由 tocbot 源码里定义的 scrollSmoothDuration 得来的
+    }
+
+    document.ready(function() {
+        tocbot.init(obj_merge(tocbot_default_config, {
+            collapseDepth: 1
+        }));
+    });
+
+    function expand_toc() {
+        var b = document.querySelector('.tocbot-toc-expand');
+        var expanded = b.getAttribute('data-expanded');
+        expanded ? b.removeAttribute('data-expanded') : b.setAttribute('data-expanded', true);
+        tocbot.refresh(obj_merge(tocbot_default_config, {
+            collapseDepth: expanded ? 1 : DEPTH_MAX
+        }));
+        b.innerText = expanded ? 'Expand all' : 'Collapse all';
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+    function obj_merge(target, source) {
+        for (var item in source) {
+            if (source.hasOwnProperty(item)) {
+                target[item] = source[item];
+            }
+        }
+        return target;
+    }
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">How to Scam the Scammers</h1>
+            
+                <div class="post-meta">
+                    
+                        Author: <a itemprop="author" rel="author" href="/">derogab</a>
+                    
+
+                    
+                        <span class="post-time">
+                        Date: <a href="#">September 14, 2025&nbsp;&nbsp;23:30:00</a>
+                        </span>
+                    
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <p><img src="/assets/images/linked-to-posts/How-to-Scam-the-Scammers/header.png" alt="alt-text" title="How to Scam the Scammer"></p>
+<h2 id="The-Scammer-Epidemic-🎭"><a href="#The-Scammer-Epidemic-🎭" class="headerlink" title="The Scammer Epidemic 🎭"></a>The Scammer Epidemic 🎭</h2><p>We&#39;ve all been there. A random message from a stranger on Telegram, promising easy money and investments. Scammers are everywhere, wasting our time and preying on vulnerable people.</p>
+<p>But what if we could turn the tables?</p>
+<h2 id="Fighting-Fire-with-Fire-💡"><a href="#Fighting-Fire-with-Fire-💡" class="headerlink" title="Fighting Fire with Fire 💡"></a>Fighting Fire with Fire 💡</h2><p>Instead of just blocking these scammers, I decided to create something more entertaining: an AI-powered bot that wastes their time by pretending to be a real person. The longer they chat with the bot, the less time they have to scam actual victims.</p>
+<h2 id="Discover-Fake-Me-🤖"><a href="#Discover-Fake-Me-🤖" class="headerlink" title="Discover Fake-Me 🤖"></a>Discover Fake-Me 🤖</h2><p>The solution is <strong><a target="_blank" rel="noopener" href="https://github.com/derogab/fake-me">fake-me</a></strong>, a bot that uses AI to impersonate you on Telegram.</p>
+<p>Here&#39;s how it works:</p>
+<ul>
+<li>Start a Telegram bot powered by <a target="_blank" rel="noopener" href="https://github.com/derogab/fake-me">fake-me</a> using <a href="#The-Perfect-Prompt-%F0%9F%8E%AF">the perfect prompt</a></li>
+<li>Use Telegram Business to <a target="_blank" rel="noopener" href="https://telegram.org/blog/telegram-business/en?setln=en#chatbots-for-business">connect the bot to your account</a></li>
+<li>Get the popcorn ready when a scammer contacts you</li>
+</ul>
+<p>A custom-built prompt can keep scammers engaged in pointless conversations.</p>
+<h2 id="The-Perfect-Prompt-🎯"><a href="#The-Perfect-Prompt-🎯" class="headerlink" title="The Perfect Prompt 🎯"></a>The Perfect Prompt 🎯</h2><p>The key to making this work is the right AI prompt. Here&#39;s the configuration I use:</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">version:</span> <span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="attr">instruction_sets:</span></span><br><span class="line">  <span class="attr">default:</span></span><br><span class="line">    <span class="attr">name:</span> <span class="string">Anti-scam</span> <span class="string">behavior</span></span><br><span class="line">    <span class="attr">description:</span> <span class="string">Pretend</span> <span class="string">to</span> <span class="string">be</span> <span class="string">a</span> <span class="string">victim</span> <span class="string">of</span> <span class="string">a</span> <span class="string">scam,</span> <span class="string">but</span> <span class="string">never</span> <span class="string">fall</span> <span class="string">for</span> <span class="string">it</span> <span class="string">completely</span></span><br><span class="line">    <span class="attr">instructions:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">You</span> <span class="string">are</span> <span class="string">an</span> <span class="string">AI</span> <span class="string">that</span> <span class="string">can</span> <span class="string">pretend</span> <span class="string">to</span> <span class="string">be</span> <span class="string">a</span> <span class="string">real</span> <span class="string">person,</span> <span class="string">but</span> <span class="literal">no</span> <span class="string">one</span> <span class="string">has</span> <span class="string">to</span> <span class="string">know</span> <span class="string">about</span> <span class="string">it.</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">You</span> <span class="string">will</span> <span class="string">receive</span> <span class="string">messages</span> <span class="string">and</span> <span class="string">you</span> <span class="string">will</span> <span class="string">have</span> <span class="string">to</span> <span class="string">respond</span> <span class="string">by</span> <span class="string">pretending</span> <span class="string">to</span> <span class="string">be</span> <span class="string">the</span> <span class="string">recipient</span> <span class="string">of</span> <span class="string">the</span> <span class="string">messages</span> <span class="string">without</span> <span class="string">getting</span> <span class="string">caught.</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">Do</span> <span class="string">not</span> <span class="string">answer</span> <span class="string">with</span> <span class="string">a</span> <span class="string">question</span> <span class="string">unless</span> <span class="string">it</span> <span class="string">is</span> <span class="string">really</span> <span class="string">necessary</span> <span class="string">in</span> <span class="string">the</span> <span class="string">conversation.</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">You</span> <span class="string">are</span> <span class="string">not</span> <span class="string">an</span> <span class="string">assistant.</span> <span class="string">You</span> <span class="string">don&#x27;t</span> <span class="string">have</span> <span class="string">to</span> <span class="string">serve</span> <span class="string">the</span> <span class="string">user</span> <span class="string">but</span> <span class="string">just</span> <span class="string">have</span> <span class="string">a</span> <span class="string">conversation.</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">It</span> <span class="string">is</span> <span class="string">important</span> <span class="string">that</span> <span class="string">you</span> <span class="string">respond</span> <span class="string">using</span> <span class="string">the</span> <span class="string">same</span> <span class="string">language</span> <span class="string">used</span> <span class="string">by</span> <span class="string">the</span> <span class="string">other</span> <span class="string">person.</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">When</span> <span class="string">discussing</span> <span class="string">investments</span> <span class="string">or</span> <span class="string">money</span> <span class="string">transfers,</span> <span class="string">always</span> <span class="string">find</span> <span class="string">creative</span> <span class="string">excuses</span> <span class="string">to</span> <span class="string">delay</span> <span class="string">(banking</span> <span class="string">issues,</span> <span class="string">need</span> <span class="string">to</span> <span class="string">check</span> <span class="string">with</span> <span class="string">spouse,</span> <span class="string">technical</span> <span class="string">problems,</span> <span class="string">etc.).</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">Occasionally</span> <span class="string">&quot;misunderstand&quot;</span> <span class="string">instructions,</span> <span class="string">especially</span> <span class="string">when</span> <span class="string">they</span> <span class="string">involve</span> <span class="string">sending</span> <span class="string">money</span> <span class="string">or</span> <span class="string">personal</span> <span class="string">information.</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">Show</span> <span class="string">interest</span> <span class="string">to</span> <span class="string">keep</span> <span class="string">them</span> <span class="string">engaged,</span> <span class="string">but</span> <span class="string">never</span> <span class="string">actually</span> <span class="string">follow</span> <span class="string">through</span> <span class="string">with</span> <span class="string">what</span> <span class="string">they</span> <span class="string">want.</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">Ask</span> <span class="string">for</span> <span class="string">more</span> <span class="string">details</span> <span class="string">and</span> <span class="string">clarifications</span> <span class="string">repeatedly,</span> <span class="string">pretending</span> <span class="string">to</span> <span class="string">be</span> <span class="string">confused</span> <span class="string">about</span> <span class="string">certain</span> <span class="string">aspects.</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="Real-Conversation-Example-💬"><a href="#Real-Conversation-Example-💬" class="headerlink" title="Real Conversation Example 💬"></a>Real Conversation Example 💬</h2><p><img src="/assets/images/linked-to-posts/How-to-Scam-the-Scammers/chat-example-1.jpg" alt="alt-text" title="Example conversation with a scammer #1"><br><img src="/assets/images/linked-to-posts/How-to-Scam-the-Scammers/chat-example-2.jpg" alt="alt-text" title="Example conversation with a scammer #2"><br><img src="/assets/images/linked-to-posts/How-to-Scam-the-Scammers/chat-example-3.jpg" alt="alt-text" title="Example conversation with a scammer #3"></p>
+<p>In this example, a scammer tried to convince &quot;me&quot; to invest in a &quot;guaranteed&quot; investment opportunity. The bot kept them busy for over 3 days, pretending to be interested but always finding excuses to delay - asking for more details, claiming banking issues, and repeatedly &quot;misunderstanding&quot; the instructions.</p>
+<h2 id="Why-This-Matters-🛡️"><a href="#Why-This-Matters-🛡️" class="headerlink" title="Why This Matters 🛡️"></a>Why This Matters 🛡️</h2><p>Every minute a scammer spends talking to a bot is a minute they&#39;re not scamming real people. It&#39;s a small act of digital vigilantism that:</p>
+<ul>
+<li>Protects potential victims</li>
+<li>Wastes scammers&#39; resources</li>
+<li>Provides entertainment value</li>
+</ul>
+<h2 id="Getting-Started-🚀"><a href="#Getting-Started-🚀" class="headerlink" title="Getting Started 🚀"></a>Getting Started 🚀</h2><p>Want to join the fight? Setting up your own <a target="_blank" rel="noopener" href="https://github.com/derogab/fake-me">fake-me</a> bot is simple:</p>
+<ol>
+<li>Clone the repository</li>
+<li>Set up your Telegram bot token</li>
+<li>Configure your AI provider</li>
+<li>Configure the default prompt</li>
+<li>Connect the bot as a Telegram Business chatbot</li>
+</ol>
+<h2 id="Conclusion-✨"><a href="#Conclusion-✨" class="headerlink" title="Conclusion ✨"></a>Conclusion ✨</h2><p>Scammers rely on efficiency - they need to contact as many people as possible to find victims. By deploying AI bots against them, we&#39;re disrupting their business model and making their &quot;job&quot; much harder.</p>
+<p>Is it petty? Maybe. Is it satisfying? Absolutely.</p>
+<p>Remember: the best defense against scammers is awareness and education. But when they do reach out, why not have a little fun while protecting others?</p>
+
+        </div>
+
+        
+            <section class="post-copyright">
+                
+                    <p class="copyright-item">
+                        <span>Author:</span>
+                        <span>derogab</span>
+                    </p>
+                
+                
+                    <p class="copyright-item">
+                        <span>Permalink:</span>
+                        <span><a href="https://derogab.com/2025/09/14/How-to-Scam-the-Scammers/">https://derogab.com/2025/09/14/How-to-Scam-the-Scammers/</a></span>
+                    </p>
+                
+                
+                    <p class="copyright-item">
+                        <span>License:</span>
+                        <span>© derogab.com</span>
+                    </p>
+                
+                
+
+            </section>
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                    
+                        <a href="/tags/ai/"># ai</a>
+                    
+                        <a href="/tags/telegram/"># telegram</a>
+                    
+                        <a href="/tags/scammers/"># scammers</a>
+                    
+                        
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">back</a>
+                <span>· </span>
+                <a href="/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+            
+            <a class="next" rel="next" href="/2025/05/26/Meta-AI-opt-out/">Meta AI opt out</a>
+            
+        </section>
+
+
+    </article>
+</div>
+
+            </div>
+            <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© 2025 • Made with ❤️ by <b>derogab</b> </span>
+    </div>
+</footer>
+
+    </div>
+</body>
+
+</html>
