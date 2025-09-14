@@ -8,11 +8,11 @@ tags:
 
 ![alt-text][header]
 
-## 🤖 The AI Data Dilemma
+## The AI Data Dilemma 🤖
 
 Artificial Intelligence systems are hungry for data. They need massive amounts of information to learn and improve - and they\'re getting it from people\'s social media posts, photos, and interactions. While this helps create smarter AI, it raises serious questions about privacy and consent.
 
-## ⚠️ What\'s Changing?
+## What\'s Changing? ⚠️
 
 Starting **May 27, 2025**, Meta (Facebook\'s parent company) will begin using people\'s content from both Facebook and Instagram to train their AI models. This includes:
 - People\'s posts
@@ -20,7 +20,7 @@ Starting **May 27, 2025**, Meta (Facebook\'s parent company) will begin using pe
 - People\'s interactions
 - Other content people have shared
 
-## 🛡️ How to Protect Your Privacy
+## How to Protect Your Privacy 🛡️
 
 If you\'re not comfortable with Meta using your personal data for AI training, you can opt out. Here\'s what you need to know:
 
@@ -28,7 +28,7 @@ If you\'re not comfortable with Meta using your personal data for AI training, y
 - The process is quick and straightforward
 - You can do it right now using the links below
 
-## Quick Links
+## Quick Links 🔗
 
 | Platform | Action |
 |----------|---------|
