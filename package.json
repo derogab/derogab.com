@@ -12,7 +12,7 @@
     "generate": "hexo generate"
   },
   "dependencies": {
-    "hexo": "^7.3.0",
+    "hexo": "^8.0.0",
     "hexo-deployer-ftpsync": "^0.2.0",
     "hexo-deployer-git": "^4.0.0",
     "hexo-generator-archive": "^2.0.0",
