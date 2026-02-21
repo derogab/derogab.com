@@ -31,7 +31,7 @@ So I decided to package them into reusable skills and plugins.
 
 At the moment, [agent-kit](https://github.com/derogab/agent-kit) includes:
 
-**Skills** (work with any agent that supports [skills.sh](https://skills.sh)):
+[**Skills**](https://skills.sh/derogab/agent-kit) (work with any agent that supports [skills.sh](https://skills.sh)):
 - [/commit](https://skills.sh/derogab/agent-kit/commit) — create conventional commits from staged changes
 - [/pr](https://skills.sh/derogab/agent-kit/pr) — create or update pull requests with a consistent structure
 
