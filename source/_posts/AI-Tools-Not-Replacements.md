@@ -1,6 +1,6 @@
 ---
 title: "AI Agents Are Tools, Not Replacements"
-date: 2026-05-15 12:20:00
+date: 2026-05-15 14:05:00
 tags:
   - ai
   - agents
@@ -24,7 +24,7 @@ I have seen it happen. More and more people paste a full error log into an agent
 
 That is the puppet problem. You are still moving, but someone else is pulling the strings. Your job becomes execution without comprehension. Over time, your ability to reason about the work atrophies. The tool that was supposed to make you faster makes you dependent instead.
 
-This is not a theoretical risk. It is a daily trade-off. Every time you accept an agent's answer without reading it carefully, you are voting with your attention. You are saying: *my understanding matters less than my speed.*
+This is not a theoretical risk. It is a daily trade-off. Every time you accept an agent\'s answer without reading it carefully, you are voting with your attention. You are saying: *my understanding matters less than my speed.*
 
 Spoiler: before long, you will realize you are neither fast nor capable.
 
@@ -40,7 +40,7 @@ When your brain is engaged, agents become multipliers. They let you explore ten 
 
 How do you know if you are replacing your brain instead of augmenting it? Here are a few signals I watch for:
 
-- You cannot explain why the agent's solution works. You just know that it does.
+- You cannot explain why the agent\'s solution works. You just know that it does.
 - You feel anxious when the agent is unavailable, as if you have forgotten how to do the task yourself.
 - You stop reading documentation because the agent "already knows."
 - Your output increases but your confidence in it decreases.
