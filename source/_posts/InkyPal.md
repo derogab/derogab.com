@@ -25,7 +25,7 @@ E-ink is perfect for it. It doesn\'t glow, doesn\'t ask for attention, doesn\'t 
 
 ## The hardware
 
-The build: a [Raspberry Pi Zero 2 W](https://www.raspberrypi.com/products/raspberry-pi-zero-2-w/), a [Waveshare 2.13-inch e-Paper display](https://www.waveshare.com/wiki/2.13inch_e-Paper_HAT_(G)_Manual), and a few hundred lines of Python. No buttons, no touch, no speakers. Just a face that changes.
+The build: a [Raspberry Pi Zero 2 WH](https://www.raspberrypi.com/products/raspberry-pi-zero-2-w/), a [Waveshare 2.13-inch e-Paper display](https://www.waveshare.com/wiki/2.13inch_e-Paper_HAT_Manual), and a few hundred lines of Python. No buttons, no touch, no speakers. Just a face that changes.
 
 It has ten built-in expressions, from `(o_o)` (happy) to `(x_x)` (debug) to `(-_-)` (sleepy). Below the face, a short message. That\'s the UI.
 
@@ -60,3 +60,37 @@ It\'s open source under GPL-3.0.
 If you want one on your desk, [give it a try](https://github.com/derogab/inkypal).
 
 <img src="/assets/images/linked-to-posts/InkyPal/display.png" alt="Hello World" title="Hello World" style="width:100%;">
+
+## Links
+
+<table>
+<tr>
+  <td>Source Code</td>
+  <td><a href="https://github.com/derogab/inkypal" target="_new">GitHub Repository</a></td>
+</tr>
+</table>
+
+<table>
+<tr>
+  <td>Raspberry Pi Zero 2 WH</td>
+  <td><a href="https://www.raspberrypi.com/products/raspberry-pi-zero-2-w/" target="_new">🌐</a></td>
+  <td><a href="https://amzn.to/4vpMEz0" target="_new">🇮🇹</a></td>
+  <td><a href="https://amzn.to/4o2EGte" target="_new">🇺🇸</a></td>
+</tr>
+<tr>
+  <td>e-Paper display</td>
+  <td><a href="https://www.waveshare.com/wiki/2.13inch_e-Paper_HAT_Manual" target="_new">🌐</a></td>
+  <td><a href="https://amzn.to/4elpunL" target="_new">🇮🇹</a></td>
+  <td><a href="https://amzn.to/3S14ES0" target="_new">🇺🇸</a></td>
+</tr>
+<tr>
+  <td>Battery (Optional)</td>
+  <td><a href="https://www.pisugar.com/products/pisugar-3-raspberry-pi-zero-battery" target="_new">🌐</a></td>
+  <td><a href="https://amzn.to/4uh1gzZ" target="_new">🇮🇹</a></td>
+  <td><a href="https://amzn.to/4x9TOcx" target="_new">🇺🇸</a></td>
+</tr>
+<tr>
+  <td>Pwnagotchi Case</td>
+  <td><a href="https://pwnagotchi.ai/installation/#case" target="_new">🌐</a></td>
+</tr>
+</table>
