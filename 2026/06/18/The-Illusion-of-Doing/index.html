@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="derogab">
+
+
+    <meta name="subtitle" content="Gabriele De Rosa.">
+
+
+    <meta name="description" content="My name is Gabriele De Rosa. Discover more about me here.">
+
+
+
+<title>The Illusion of Doing | I&#39;m Gabriele!</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+    <script src="/fonts/fontawesome/js/all.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<meta name="generator" content="Hexo 8.1.2"><link rel="alternate" href="/atom.xml" title="I'm Gabriele!" type="application/atom+xml">
+</head>
+
+<body>
+    <script>
+        // this function is used to check current theme before page loaded.
+        (() => {
+            const pagebody = document.getElementsByTagName('body')[0]
+
+            function setTheme(status) {
+
+                if (status === 'dark') {
+                    window.sessionStorage.theme = 'dark'
+                    pagebody.classList.add('dark-theme');
+
+                } else if (status === 'light') {
+                    window.sessionStorage.theme = 'light'
+                    pagebody.classList.remove('dark-theme');
+                }
+            };
+
+            setTheme(window.sessionStorage.theme)
+        })();
+    </script>
+
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/"></a></div>
+            <div class="menu navbar-right">
+                
+                <a class="menu-item" href="/">Home</a>
+                
+                <a class="menu-item" href="/projects">Projects</a>
+                
+                <a class="menu-item" href="/archives">Blog</a>
+                
+                <a class="menu-item" href="/donate">Donate</a>
+                
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/"></a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">
+                    <svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M4.5 17.27q-.213 0-.356-.145T4 16.768t.144-.356t.356-.143h15q.213 0 .356.144q.144.144.144.357t-.144.356t-.356.143zm0-4.77q-.213 0-.356-.144T4 11.999t.144-.356t.356-.143h15q.213 0 .356.144t.144.357t-.144.356t-.356.143zm0-4.77q-.213 0-.356-.143Q4 7.443 4 7.23t.144-.356t.356-.143h15q.213 0 .356.144T20 7.23t-.144.356t-.356.144z"/></svg>
+                    <svg class="close-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><!-- Icon from Material Symbols Light by Google - https://github.com/google/material-design-icons/blob/master/LICENSE --><path fill="currentColor" d="m12 12.708l-5.246 5.246q-.14.14-.344.15t-.364-.15t-.16-.354t.16-.354L11.292 12L6.046 6.754q-.14-.14-.15-.344t.15-.364t.354-.16t.354.16L12 11.292l5.246-5.246q.14-.14.345-.15q.203-.01.363.15t.16.354t-.16.354L12.708 12l5.246 5.246q.14.14.15.345q.01.203-.15.363t-.354.16t-.354-.16z"/></svg>
+                </div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                <a class="menu-item" href="/">Home</a>
+                
+                <a class="menu-item" href="/projects">Projects</a>
+                
+                <a class="menu-item" href="/archives">Blog</a>
+                
+                <a class="menu-item" href="/donate">Donate</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if (toggleMenu.classList.contains("active")) {
+            toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        } else {
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+            <div class="main">
+                <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    var tocbot_timer;
+    var DEPTH_MAX = 6; // 为 6 时展开所有
+    var tocbot_default_config = {
+        tocSelector: '.tocbot-list',
+        contentSelector: '.post-content',
+        headingSelector: 'h1, h2, h3, h4, h5',
+        orderedList: false,
+        scrollSmooth: true,
+        onClick: extend_click,
+    };
+
+    function extend_click() {
+        clearTimeout(tocbot_timer);
+        tocbot_timer = setTimeout(function() {
+            tocbot.refresh(obj_merge(tocbot_default_config, {
+                hasInnerContainers: true
+            }));
+        }, 420); // 这个值是由 tocbot 源码里定义的 scrollSmoothDuration 得来的
+    }
+
+    document.ready(function() {
+        tocbot.init(obj_merge(tocbot_default_config, {
+            collapseDepth: 1
+        }));
+    });
+
+    function expand_toc() {
+        var b = document.querySelector('.tocbot-toc-expand');
+        var expanded = b.getAttribute('data-expanded');
+        expanded ? b.removeAttribute('data-expanded') : b.setAttribute('data-expanded', true);
+        tocbot.refresh(obj_merge(tocbot_default_config, {
+            collapseDepth: expanded ? 1 : DEPTH_MAX
+        }));
+        b.innerText = expanded ? 'Expand all' : 'Collapse all';
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+    function obj_merge(target, source) {
+        for (var item in source) {
+            if (source.hasOwnProperty(item)) {
+                target[item] = source[item];
+            }
+        }
+        return target;
+    }
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">The Illusion of Doing</h1>
+            
+                <div class="post-meta">
+                    
+                        Author: <a itemprop="author" rel="author" href="/">derogab</a>
+                    
+
+                    
+                        <span class="post-time">
+                        Date: <a href="#">June 18, 2026&nbsp;&nbsp;8:42:00</a>
+                        </span>
+                    
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <p>AWS posted something that should make every engineering team stop and think.</p>
+<blockquote>
+<p><a target="_blank" rel="noopener" href="https://x.com/awscloud/status/2064449711155589396">More AI-generated code doesn&#39;t make your team faster. It might actually slow you down.</a></p>
+<p>— AWS (<a target="_blank" rel="noopener" href="https://x.com/awscloud">@awscloud</a>)</p>
+</blockquote>
+<p>But nobody is slowing down.</p>
+<p>So... what?!</p>
+<p>In the age of AI, being fast has never been easier. With a prompt and a few seconds, you can generate thousands of lines of code, draft a full document, or produce a complete analysis. The tools are so good at amplifying personal output that it feels like you are accomplishing more than ever before. </p>
+<p>There is a dangerous illusion hiding in all this speed.</p>
+<h2 id="Speed-Is-Not-Progress"><a href="#Speed-Is-Not-Progress" class="headerlink" title="Speed Is Not Progress"></a>Speed Is Not Progress</h2><p>What feels like progress on a personal level does not always translate into progress for the company. An individual producing massive amounts of output can create the <em>impression</em> that things are moving forward, while the company itself is barely advancing. <strong>Speed without direction is just motion, not movement.</strong></p>
+<p>AI has made it trivial to be fast as an individual. Responding instantly, generating code continuously, shipping pull requests by the dozen. All of this is now effortless. But the real risk is that you end up doing a lot of useless things. The volume masks the lack of alignment. You are busy, but you are not necessarily building what matters.</p>
+<p>The real bottleneck was never writing code. It was releasing it, debugging it, and keeping it running well. That was true long before generative AI arrived. Writing more code faster does not solve any of these problems. It makes them worse.</p>
+<blockquote>
+<p><a target="_blank" rel="noopener" href="https://x.com/Prashtwtz/status/2064557767659332064">AI makes typing cheaper, not ownership cheaper. If nobody can review, debug, and explain the code after, the team did not go faster, it just moved the bottleneck from writing to cleanup.</a></p>
+<p>— Prashanth (<a target="_blank" rel="noopener" href="https://x.com/Prashtwtz">@Prashtwtz</a>), replying to AWS</p>
+</blockquote>
+<h2 id="The-Software-Development-Trap"><a href="#The-Software-Development-Trap" class="headerlink" title="The Software Development Trap"></a>The Software Development Trap</h2><p>This dynamic is especially visible in software development. It has become extremely easy to generate thousands of lines of code with AI assistants. The problem is that much of this code is useless or misaligned with the actual task at hand. The danger is writing code just to show that you are writing a lot. High volume, low utility.</p>
+<p>Now we have the numbers to prove it. A <a target="_blank" rel="noopener" href="https://www.nber.org/papers/w35275">new NBER working paper</a> by Demirer, Musolff, and Yang tracked developer activity across GitHub and Microsoft telemetry, measuring the effect of AI coding tools at each stage of the production pipeline. The result is a cliff. Interactive coding agents produce a <strong>741% increase in lines of code</strong> written. But that number collapses at every subsequent stage: <strong>+65% in pull requests</strong>, and only <strong>+20% in actual releases</strong>.</p>
+<p>Autocomplete shows the same pattern: 228% more lines of code, 36% more commits, 10% more releases. The authors call this the &quot;weak-link hypothesis&quot;: AI&#39;s productivity gains at the writing stage are attenuated by human bottlenecks downstream. Code needs to be reviewed, integrated, tested, and released. AI does not do any of that. It just piles more work onto the humans who do.</p>
+<p>Their model estimates an elasticity of substitution between AI output and human effort of just 0.25. AI and humans are (at least for now, obv.) strong complements, not substitutes. You cannot replace the human in the loop. You can only drown them in code they do not have time to review.</p>
+<p>This is not a new problem: it&#39;s <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Amdahl%27s_law">Amdahl&#39;s Law</a>. Gene Amdahl noted in 1967 that speeding up one part of a computation has diminishing returns if the rest of the pipeline stays the same. For example, if code writing is 20% of the total development cycle, making it infinitely fast yields at most a 1.25x overall improvement — a 25% gain. The NBER paper finds the same dynamic: their model shows that with an elasticity of 0.25, even unlimited upstream AI yields only finite gains, and in practice those 741% more lines of code become just 20% more releases. Not 5x. Not 2x. Twenty percent.</p>
+<p>A separate <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2603.28592">large-scale study</a> shows where the fake-speed problem also becomes a reliability problem. Looking at over 300000 verified AI-authored commits across thousands of GitHub repositories, it found that more than 15% of commits from every major AI coding assistant introduced at least one issue. The illusion of clean, fast output does not hold up once you look under the hood.</p>
+<blockquote>
+<p>AI is an accelerant, an amplifier. It will not fix your systems for you. If your systems are already chaotic, all it does is inject more chaos into an already chaotic system.</p>
+<p>— <a target="_blank" rel="noopener" href="https://art19.com/shows/aws-for-software-companies-podcast/episodes/59a5e52f-411e-4017-9bd9-6dc0b9aee027">AWS for Software Companies Podcast Ep194</a>, citing the <a target="_blank" rel="noopener" href="https://dora.dev/research/2025/dora-report/">2025 DORA Report</a></p>
+</blockquote>
+<p>And speed without reliability is just faster breakage.</p>
+<h2 id="Technical-Debt-as-a-Compounding-Tax"><a href="#Technical-Debt-as-a-Compounding-Tax" class="headerlink" title="Technical Debt as a Compounding Tax"></a>Technical Debt as a Compounding Tax</h2><p>Worse than introducing issues is continuously adding absurd technical debt and a lack of understanding of the codebase. When you generate code faster than you can comprehend it, you are not building software. You are building the bottleneck that will slow everything down later.</p>
+<p>The <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2603.28592">arXiv paper 2603.28592</a> also tracked what happens to those AI-introduced issues over time: nearly a quarter of them (22.7%) were still present in the latest version of the repository. They had not been fixed; they persisted, accumulated, and became part of the codebase long after the original author had moved on. Out of 484366 distinct issues found in total, code smells alone accounted for almost 90%.</p>
+<p>In the long term, this risks creating significant damage to the project. Speed without comprehension compounds into legacy problems that are expensive and painful to fix later. That quick feature that &quot;just works&quot; today becomes the bottleneck that slows down the entire team six months from now.</p>
+<blockquote>
+<p>The binding constraint is shifting from writing code to reviewing, integrating, and ultimately distributing it.</p>
+<p>— <a target="_blank" rel="noopener" href="https://www.nber.org/papers/w35275">NBER Working Paper #35275</a></p>
+</blockquote>
+<h2 id="The-Vicious-Cycle"><a href="#The-Vicious-Cycle" class="headerlink" title="The Vicious Cycle"></a>The Vicious Cycle</h2><p>Here is where the illusion turns into a trap. The technical debt generated by all that fast coding does not just sit there quietly. It amplifies the individual&#39;s useless speed by creating difficulties and critical issues that demand more effort to fix. You have to run faster just to stay in place.</p>
+<p>Instead of growing, team velocity decreases. The more debt you accumulate, the more time the team spends firefighting instead of building. The company feels busy. Everyone is working hard. But real progress stalls. The illusion of doing becomes a self-reinforcing cycle of frantic activity and diminishing returns.</p>
+<h2 id="What-Actually-Moves-the-Needle"><a href="#What-Actually-Moves-the-Needle" class="headerlink" title="What Actually Moves the Needle"></a>What Actually Moves the Needle</h2><p>True company velocity is not personal speed measured in lines of code. It comes from <strong>team organization, shared decision-making, and agile development guided by a clear vision</strong>.</p>
+<blockquote>
+<p>Every AI output has to have a human owner. If you don&#39;t want your name on it, it&#39;s probably not good piece of work.</p>
+<p>— <a target="_blank" rel="noopener" href="https://art19.com/shows/aws-for-software-companies-podcast/episodes/59a5e52f-411e-4017-9bd9-6dc0b9aee027">AWS for Software Companies Podcast Ep194</a></p>
+</blockquote>
+<p>Rules get gamed. Values create culture. When the standard is &quot;own what you ship&quot; rather than &quot;don&#39;t copy-paste AI output&quot;, people think instead of complying.</p>
+<p>This also means measuring the right things. If you track only lines of code or PRs merged, AI will flood those metrics while real progress stalls.</p>
+<blockquote>
+<p>It&#39;s worse to have just one or two metrics than to have no metrics. If you&#39;re going to have metrics, have a basket of them and look for the story they&#39;re telling you.</p>
+<p>— <a target="_blank" rel="noopener" href="https://art19.com/shows/aws-for-software-companies-podcast/episodes/59a5e52f-411e-4017-9bd9-6dc0b9aee027">AWS for Software Companies Podcast Ep194</a></p>
+</blockquote>
+<p>You need a basket of signals better than the number of PRs&#x2F;commits&#x2F;lines: <strong>reliability, customer impact, deployment frequency, team velocity</strong>. And the story they tell together, not any single number.</p>
+<p>Less but better-targeted work outperforms sheer individual output every time. A small, well-understood change that solves the right problem creates more value than a massive refactor that nobody fully grasps. Company speed is a team property, not a personal metric.</p>
+<h2 id="The-Value-of-Thinking-First"><a href="#The-Value-of-Thinking-First" class="headerlink" title="The Value of Thinking First"></a>The Value of Thinking First</h2><p>What is truly valuable is writing well-defined tasks and thoughtfully analyzing the best solution to reach a specific goal. This is far more important than writing a lot without thinking just to complete a task that &quot;works&quot; but will eventually break and make things much harder in the future.</p>
+<p>Thinking before coding beats writing fast but fragile code. Understanding the problem beats generating a solution. A clear, shared goal beats individual heroics.</p>
+<p>There is a longer-term risk here too. As AI makes code generation effortless, a generation of developers risks never learning to debug without it, reason about architecture, or truly understand what the code does. The productivity boost is real in the short term, but it creates a knowledge gap that compounds. AI-native developers risk becoming operators of black boxes rather than engineers who understand their craft. The output looks real. The understanding behind it is thin.</p>
+<p>The quantity problem is solved. The quality problem has gotten harder than ever.</p>
+<blockquote>
+<p>Quality first, quantity second.</p>
+<p>— <a target="_blank" rel="noopener" href="https://art19.com/shows/aws-for-software-companies-podcast/episodes/59a5e52f-411e-4017-9bd9-6dc0b9aee027">AWS for Software Companies Podcast Ep194</a></p>
+</blockquote>
+<p>That sounds obvious until you realize how many teams operate the other way around: shipping as much as possible and hoping quality catches up later. With AI making volume free, the temptation to invert those priorities has never been stronger. <strong>The differentiator is no longer who can produce the most. It is who can produce something worth owning.</strong></p>
+<p>The illusion of doing is seductive because it feels productive. But real productivity is not measured in output volume. It is measured in meaningful progress toward the right outcomes. And that requires something AI cannot generate for you: judgment.</p>
+<p>If you are going to put your name on it, make sure you understand it first.</p>
+<p><img src="/assets/images/linked-to-posts/The-Illusion-of-Doing/header.png" alt="alt-text" title="The Illusion of Doing"></p>
+
+        </div>
+
+        
+            <section class="post-copyright">
+                
+                    <p class="copyright-item">
+                        <span>Author:</span>
+                        <span>derogab</span>
+                    </p>
+                
+                
+                    <p class="copyright-item">
+                        <span>Permalink:</span>
+                        <span><a href="https://derogab.com/2026/06/18/The-Illusion-of-Doing/">https://derogab.com/2026/06/18/The-Illusion-of-Doing/</a></span>
+                    </p>
+                
+                
+                    <p class="copyright-item">
+                        <span>License:</span>
+                        <span>© derogab.com</span>
+                    </p>
+                
+                
+
+            </section>
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                    
+                        <a href="/tags/ai/"># ai</a>
+                    
+                        <a href="/tags/productivity/"># productivity</a>
+                    
+                        <a href="/tags/software-development/"># software-development</a>
+                    
+                        <a href="/tags/technical-debt/"># technical-debt</a>
+                    
+                        <a href="/tags/team-velocity/"># team-velocity</a>
+                    
+                        
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">back</a>
+                <span>· </span>
+                <a href="/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+                <a class="prev" rel="prev" href="/2026/08/01/AI-Notes/">AI Notes: record, transcribe, enrich</a>
+            
+            
+            <a class="next" rel="next" href="/2026/06/03/InkyPal/">InkyPal: a tiny smart companion on e-ink</a>
+            
+        </section>
+
+
+    </article>
+</div>
+
+            </div>
+            <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© 2026 • Made with ❤️ by <b>derogab</b> </span>
+    </div>
+</footer>
+
+    </div>
+</body>
+
+</html>
